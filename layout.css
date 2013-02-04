@@ -1,0 +1,132 @@
+
+
+/**************************************************************************
+										LAYOUT
+ **************************************************************************/
+.wrapper, 
+header, 
+footer {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 20px auto;
+}
+
+header,  
+footer {
+	clear: both;
+}
+
+
+/*** BORDER LAYOUT ***/
+.layout-border {
+	overflow: auto;
+}
+
+.layout-border > * {
+	display: none;
+}
+
+[class*="layout-border-"] {
+	display: block;
+}
+
+.layout-border-top,
+.layout-border-bottom {
+	width: 100%;
+	clear: both;
+}
+
+.layout-border > .layout-border-left {
+	float: left;
+}
+
+.layout-border > .layout-border-right {
+	float: right;
+}
+
+.layout-border > .layout-border-center {
+	float: left;
+}
+
+
+
+/*** COLUMN LAYOUT ***/
+.layout-column > * {
+	float: left;
+}
+
+.layout-column.wide {
+	width: 9999px;
+}
+
+
+/*** ROW LAYOUT ***/
+
+.layout-row > * {
+	float: left;
+	width: 100%;
+}
+
+
+
+/*** GRID LAYOUT ***/
+
+.layout-grid > * {
+	display: inline-block;	
+   
+   /* IE7 HACK */
+   *display: inline;
+   *zoom: 1;
+}
+
+
+
+/*** TABS LAYOUT ***/
+
+.layout-tabs {
+	display: block;
+	position: relative;
+}
+
+.layout-tabs > * {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+
+/*** XY LAYOUT ***/
+.layout-xy {
+	position: relative;
+}
+
+.layout-xy > * {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+
+/*** LAYOUT INLINE ***/
+
+.layout-inline > * { 
+    display: inline-block;
+    
+    /* IE7 HACK */
+    *display: inline;
+    *zoom: 1;
+}
+
+
+
+/*** LAYOUT STACKED ***/
+
+.layout-stacked > * {
+    display: block;
+}
