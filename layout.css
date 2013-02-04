@@ -21,51 +21,51 @@ footer {
 
 
 /*** BORDER LAYOUT ***/
-.layout-border {
+.l-border {
 	overflow: auto;
 }
 
-.layout-border > * {
+.l-border > * {
 	display: none;
 }
 
-[class*="layout-border-"] {
+[class*="l-border-"] {
 	display: block;
 }
 
-.layout-border-top,
-.layout-border-bottom {
+.l-border-top,
+.l-border-bottom {
 	width: 100%;
 	clear: both;
 }
 
-.layout-border > .layout-border-left {
+.l-border > .l-border-left {
 	float: left;
 }
 
-.layout-border > .layout-border-right {
+.l-border > .l-border-right {
 	float: right;
 }
 
-.layout-border > .layout-border-center {
+.l-border > .l-border-center {
 	float: left;
 }
 
 
 
 /*** COLUMN LAYOUT ***/
-.layout-column > * {
+.l-column > * {
 	float: left;
 }
 
-.layout-column.wide {
+.l-column.wide {
 	width: 9999px;
 }
 
 
 /*** ROW LAYOUT ***/
 
-.layout-row > * {
+.l-row > * {
 	float: left;
 	width: 100%;
 }
@@ -74,7 +74,7 @@ footer {
 
 /*** GRID LAYOUT ***/
 
-.layout-grid > * {
+.l-grid > * {
 	display: inline-block;	
    
    /* IE7 HACK */
@@ -86,12 +86,12 @@ footer {
 
 /*** TABS LAYOUT ***/
 
-.layout-tabs {
+.l-tabs {
 	display: block;
 	position: relative;
 }
 
-.layout-tabs > * {
+.l-tabs > * {
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -115,7 +115,7 @@ footer {
 
 /*** LAYOUT INLINE ***/
 
-.layout-inline > * { 
+.l-inline > * { 
     display: inline-block;
     
     /* IE7 HACK */
@@ -127,6 +127,6 @@ footer {
 
 /*** LAYOUT STACKED ***/
 
-.layout-stacked > * {
+.l-stacked > * {
     display: block;
 }
