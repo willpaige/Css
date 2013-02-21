@@ -1,0 +1,144 @@
+/* BASIC ANIMATIONS */
+
+.ani {
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.ani:hover {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.ani:active {
+	-webkit-transition: all 1.5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+	-o-transition: all 1.5s ease-in-out;
+	transition: all 1.5s ease-in-out;
+}
+
+
+/* SLOW ANIMATION */
+
+.ani-slow,
+.ani-slow:hover,
+.ani-slow:active {
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+	-o-transition-duration: 2s;
+	transition-duration: 2s;
+}
+
+
+/* FAST ANIMATION */
+
+.ani-fast,
+.ani-fast:hover,
+.ani-fast:active {
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+
+/******* EASING *******/
+
+.ani-linear {
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	transition-timing-function: linear;	
+}
+
+.ani-easein {
+	-webkit-transition-timing-function: ease-in;
+	-moz-transition-timing-function: ease-in;
+	-o-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;	
+}    
+	  
+
+/* SPIN ANIMATION */
+
+
+@-webkit-keyframes spin {  
+	from {  
+	  -webkit-transform: rotate(0deg);  
+	}  
+	to {  
+	    -webkit-transform: rotate(360deg);  
+	    }  
+}
+
+@-moz-keyframes spin {  
+	from {  
+	  -moz-transform: rotate(0deg);  
+	}  
+	to {  
+	  -moz-transform: rotate(360deg);  
+	   }  
+}
+
+@-o-keyframes spin {  
+	from {  
+	  -o-transform: rotate(0deg);  
+	}  
+	to {  
+	  -o-transform: rotate(360deg);  
+	   }  
+}
+
+@keyframes spin {  
+	from {  
+	  transform: rotate(0deg);  
+	}  
+	to {  
+	  transform: rotate(360deg);  
+   }  
+}
+
+
+
+/* SCALE ANIMATION */
+
+
+@-webkit-keyframes scale {  
+	from {  
+	  -webkit-transform: scale(0);  
+	}  
+	to {  
+	    -webkit-transform: scale(1.2);  
+	    }  
+}
+
+@-moz-keyframes scale {  
+	from {  
+	  -moz-transform: scale(0);  
+	}  
+	to {  
+	  -moz-transform: scale(1.2);  
+	   }  
+}
+
+@-o-keyframes scale {  
+	from {  
+	  -o-transform: scale(0);  
+	}  
+	to {  
+	  -o-transform: scale(1.2);  
+	   }  
+}
+
+@keyframes scale {  
+	from {  
+	  transform: scale(0);  
+	}  
+	to {  
+	  transform: scale(1.2);  
+   }  
+}
